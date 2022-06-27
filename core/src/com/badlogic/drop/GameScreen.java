@@ -145,7 +145,7 @@ public class GameScreen implements Screen {
 		Iterator<Rectangle> iterBirb = birbs.iterator();
 		while(iterBirb.hasNext()){
 			Rectangle birb = iterBirb.next();
-			birb.x += MathUtils.random(50,3-0) * Gdx.graphics.getDeltaTime();
+			birb.x += MathUtils.random(50,300) * Gdx.graphics.getDeltaTime();
 			if(birb.x+64>800) {
 				iterBirb.remove();
 				birbCounter++;
